@@ -4,13 +4,12 @@ import TodoItem from './TodoItem'
 const TodoList = ({ todos, toggleComplete, removeTodo }) => {
 	return (
 		<ul>
-			{todos.map((todo, index) => (
+			{todos.map((todo) => (
 				<TodoItem
-					key={index}
-					index={index}
+					key={todo._id}
 					todo={todo}
-					toggleComplete={toggleComplete}
-					removeTodo={removeTodo}
+					toggleComplete={() => toggleComplete(todo._id, !todo.completed)}
+					removeTodo={() => removeTodo(todo._id)}
 				/>
 			))}
 		</ul>
