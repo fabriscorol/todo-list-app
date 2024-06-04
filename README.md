@@ -1,8 +1,29 @@
-# React + Vite
+# Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation
 
-Currently, two official plugins are available:
+1. Clone du repository : `git clone git@github.com:fabriscorol/todo-list-app.git`
+2. Installation des dependencies : `npm install`
+3. Lancer l'application : `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tests
+
+1. Lancer les tests unitaires : `npm run test`
+
+## Déploiement
+
+1. Deploy to Netlify : `npm run deploy`
+
+Frontend (Netlify)
+Assurez-vous que les secrets NETLIFY_AUTH_TOKEN et NETLIFY_SITE_ID sont configurés dans les secrets GitHub.
+
+## Configuration
+
+* VERCEL_API_KEY : your Netlify API key
+* PROJECT_ID : your frontend project ID
+
+## Technologies Utilisées
+Frontend : React
+CI/CD : GitHub Actions
+Déploiement : Netlify (frontend)
+
