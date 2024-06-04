@@ -60,10 +60,9 @@ function App() {
 	
 	return (
 		<>
-			if (error) {
-				<div>{error}</div>
-			}
 			<h1>To-Do List</h1>
+			{ error ? (<span className='text-red-500'> {error} </span> ) : "" }
+
 			<div className='class="md:w-1/2 mx-auto"'>
 				<div className="bg-white shadow-md rounded-lg p-6">
 					<TodoForm addTodo={addTodo} />
