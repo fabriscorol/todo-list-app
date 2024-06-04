@@ -12,7 +12,7 @@ const TodoItem = ({ todo, toggleComplete, removeTodo }) => {
                 </label>               
                 <div>
                     <button onClick={() => toggleComplete(todo._id, !todo.completed)} >
-                        {todo.completed ? 'non achevée' : 'achevée'}
+                        {todo.completed ? 'non achever' : 'achever'}
                     </button>
                     <button onClick={() => removeTodo(todo._id)} className="text-red-500 hover:text-red-700 mr-2 delete-btn">Supprimer</button>
                 </div>
